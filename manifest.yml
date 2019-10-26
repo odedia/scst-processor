@@ -1,0 +1,10 @@
+---
+applications:
+- name: scst-process
+  memory: 1024m
+  path: target/scst-processor-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+  services:
+  - rabbitmq
+  - kafka
